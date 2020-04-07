@@ -1,0 +1,9 @@
+import firebase from 'firebase/app';
+
+import 'firebase/firestore';
+
+const firestore= firebase.firestore();
+
+firestore.collection('users').doc('RCPsCB9qGWGRqzbocuTS').collection('cartItems').doc('njSLuUzdJAN3LFMMdO0N')
+firestore.doc('/users/RCPsCB9qGWGRqzbocuTS/cartItems/njSLuUzdJAN3LFMMdO0N');
+firestore.collection('/users/RCPsCB9qGWGRqzbocuTS/cartItems')
