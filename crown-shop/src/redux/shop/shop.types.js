@@ -5,4 +5,4 @@ const shopActionTypes={
     FETCH_COLLECTIONS_FAILURE : 'FETCH_COLLECTIONS_FAILURE'
 }
 
-export default shopActionTypes;
+export default shopActionTypes; 
