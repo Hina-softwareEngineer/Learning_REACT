@@ -42,6 +42,13 @@ client.query({
 }).then(response => console.log(response))
 
 
+// For Mutation
+client.writeData({
+  data: {
+    cartHidden : true
+  }
+})
+
 
 ReactDOM.render(
   <ApolloProvider>
