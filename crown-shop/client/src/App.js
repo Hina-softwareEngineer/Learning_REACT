@@ -76,3 +76,39 @@ const mapDispatchToProps= dispatch => ({
 })
 
 export default connect(mapStateToProps, mapDispatchToProps)(App);
+
+
+/* 
+
+React performance, 
+
+lazy, suspense, 
+
+Error Boundries
+
+Memo , pureComponent
+
+use Memo
+
+use Callback
+
+Profiler
+
+<Profiler id="dir" on Render={(id, phasem acturalDuration) => {
+  console.log(id, phase, actualDuration);
+}}>
+
+<Profiler/>
+
+*/
+
+
+/* 
+
+npm install compression
+in Node js
+const compression=require("compression");
+app.use(compression());
+
+npm list react
+*/
