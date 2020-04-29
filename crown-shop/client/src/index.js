@@ -12,46 +12,47 @@ import { InMemoryCache} from 'apollo-cache-inmemory';
 import { ApolloClient , gql} from 'apollo-boost';
 
 
+import * as serviceWorker from './serviceWorker';
 
-const httpLink = createHttpLink({
-  uri : 'https://crwn-clothing.com'
-});
+// const httpLink = createHttpLink({
+//   uri : 'https://crwn-clothing.com'
+// });
 
-const cache=new InMemoryCache();
+// const cache=new InMemoryCache();
 
-const client= new ApolloClient({
-  link : httpLink,
-  cache
-});
+// const client= new ApolloClient({
+//   link : httpLink,
+//   cache
+// });
 
-client.query({
-  query : gql`
-  {
-    getCollectionsByTitle(title : "hats"){
-      id 
-      title
-      items{
-        id 
-        name
-        price
-        imageUrls
-      }
-    }
-  }
-  `
-}).then(response => console.log(response))
+// client.query({
+//   query : gql`
+//   {
+//     getCollectionsByTitle(title : "hats"){
+//       id 
+//       title
+//       items{
+//         id 
+//         name
+//         price
+//         imageUrls
+//       }
+//     }
+//   }
+//   `
+// }).then(response => console.log(response))
 
 
-// For Mutation
-client.writeData({
-  data: {
-    cartHidden : true
-  }
-})
+// // For Mutation
+// client.writeData({
+//   data: {
+//     cartHidden : true
+//   }
+// })
 
 
 ReactDOM.render(
-  <ApolloProvider>
+  // <ApolloProvider>
   <Provider store={store}>
     <React.StrictMode>
       <BrowserRouter>
@@ -60,8 +61,10 @@ ReactDOM.render(
           </PersistGate>
       </BrowserRouter>
     </React.StrictMode>
-  </Provider>
-  </ApolloProvider>,
+  </Provider>,
+  // </ApolloProvider>,
   document.getElementById('root')
 );
 
+
+serviceWorker.register();
