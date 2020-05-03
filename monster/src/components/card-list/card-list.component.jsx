@@ -1,6 +1,8 @@
 import React , {Component} from 'react';
 import './card-list.styles.css'
-import { Card } from '../card/card.component';
+// import { Card } from '../card/card.component';
+
+// import { shallow, mount, render } from 'enzyme';
 
 export const CardList = props =>(
     <div className='card-list'>
