@@ -5,14 +5,14 @@ import 'firebase/auth';
 
 const config = {
     
-        apiKey: "AIzaSyD_rfB0LlhfSYA_67aWNu9heMt28ZRocoE",
-        authDomain: "crown-clothing-a6e47.firebaseapp.com",
-        databaseURL: "https://crown-clothing-a6e47.firebaseio.com",
-        projectId: "crown-clothing-a6e47",
+        apiKey: "Your api key",
+        authDomain: "auth domain",
+        databaseURL: "https://crown-clothing url",
+        projectId: "crown-clothing",
         storageBucket: "crown-clothing-a6e47.appspot.com",
-        messagingSenderId: "65798383513",
-        appId: "1:65798383513:web:b430c910f825ef5776d508",
-        measurementId: "G-QXMTJYEQ6T"
+        messagingSenderId: "65798334813",
+        appId: "1:65798383513:web:b430c910",
+        measurementId: "G-QXMT"
       
 };
 
